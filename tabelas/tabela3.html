@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 3</title>
+    <style>
+      
+        .conteudo-tabela{
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 20px;
+            font-size: 0.9em;
+            min-width: 400px;/*expandir*/
+            border-radius: 5px 5px 0 0;
+            overflow: hidden;/*deixa o border-radius funcionar, pois a borda da tabela prevalece*/
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.157);
+        }
+        .conteudo-tabela thead tr{
+            background-color: #009879;
+            color: white;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .conteudo-tabela th,
+        .conteudo-tabela td{
+            padding: 12px 15px;
+        }
+
+        .conteudo-tabela tbody tr{
+            border-bottom: 1px solid #dddddd;
+        }
+        .conteudo-tabela tbody tr:nth-of-type(even){
+            background-color: #f3f3f3;
+        }
+
+        .conteudo-tabela tbody tr:last-of-type{
+            border-bottom: 2px solid #009879;
+        }
+        .conteudo-tabela tbody tr.ativar-row{
+            font-weight: bold;
+            color: #009879;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="conteudo-tabela">
+        <thead>
+            <tr>
+                <th>Rank</th>
+                <th>Nome</th>
+                <th>Pontos</th>
+                <th>Time</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Gabriele</td>
+                <td>88,110</td>
+                <td>dcode</td>
+            </tr>
+            <tr class="ativar-row">
+                <td>2</td>
+                <td>Roberta</td>
+                <td>72,400</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Lais</td>
+                <td>52,300</td>
+                <td>dcode</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
