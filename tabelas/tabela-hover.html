@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Hover</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: large;
+            color: rgba(255, 255, 255, 0.911);
+            background-image: linear-gradient(to right, #340217,  #8F1D1D);
+        }
+        h2{
+            color: rgba(255, 255, 255, 0.884);
+            text-align: center;
+        }
+        .conteudo-table{
+            border: 1px solid rgba(128, 128, 128, 0.411);
+            text-align: center;
+            border-collapse: collapse;
+            min-width: 800px;
+            margin: auto;
+        }
+        .conteudo-table tbody tr{
+            border-top: 1px solid rgba(128, 128, 128, 0.233);
+        }
+        .conteudo-table tbody td{
+            padding: 10px;
+        }
+        .conteudo-table tbody td:hover{
+            background-color:rgba(128, 128, 128, 0.411);
+        }
+        .conteudo-table thead tr{
+            background-color: rgba(128, 128, 128, 0.568);
+            text-align: center;
+        }
+        .conteudo-table thead tr th{
+            padding: 5px;
+        }
+
+    </style>
+</head>
+<body>
+    <table class="conteudo-table">
+        <h2>ESTILIZANDO TABELA COM HOVER</h2>
+        <thead>
+            <tr>
+                <th>NAME</th>
+                <th>STATUE</th>
+                <th>PRICE</th>
+                <th>VOL</th>
+                <th>CH %</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>ETH</td>
+                <td>SELL/HIGH</td>
+                <td>$1.38</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+            </tr>
+            <tr>
+                <td>DASH</td>
+                <td>SELL/HIGH</td>
+                <td>$2.38</td>
+                <td>+0.01</td>
+                <td>-1.36%</td>
+            </tr>
+            <tr>
+                <td>ZEC</td>
+                <td>BUY/DOWN</td>
+                <td>$3.22</td>
+                <td>-0.01</td>
+                <td>+1.36%</td>
+            </tr>
+            <tr>
+                <td>WAVES</td>
+                <td>SELL/HIGH</td>
+                <td>$1.02</td>
+                <td>-1.01</td>
+                <td>+2.36%</td>
+            </tr>
+            <tr>
+                <td>LSK</td>
+                <td>SELL/DOWN</td>
+                <td>$2.36</td>
+                <td>+2.01</td>
+                <td>-0.36%</td>
+            </tr>
+            <tr>
+                <td>BBC</td>
+                <td>BUY/HIGH</td>
+                <td>$2.36</td>
+                <td>-0.01</td>
+                <td>-1.36%</td>
+            </tr>
+            <tr>
+                <td>LTC</td>
+                <td>BUY/DOWN</td>
+                <td>$3.22</td>
+                <td>+0.01</td>
+                <td>+1.36%</td>
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
